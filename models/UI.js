@@ -66,14 +66,20 @@ export class UI {
   showDescripcion(descripcion, callback)  {
     const app = document.querySelector('#app');
     app.innerHTML = "";
+    let title = document.createElement('h2');
     let descripcionElem = document.createElement("p");
+    let devContainer = document.createElement('div');
     let buttonDescripcion = document.createElement("button");
-    buttonDescripcion.className = "button"
+    title.innerText = "Respuesta";
+    devContainer.className = "containerDescripcion"
+    buttonDescripcion.className = "buttonDescripcion";
     buttonDescripcion.innerText = "Siguiente";
     buttonDescripcion.addEventListener('click', () => callback(app));
     descripcionElem.className = "descripcion"
     descripcionElem.innerHTML = descripcion;
-    app.appendChild(descripcionElem)
-    app.appendChild(buttonDescripcion)
+    app.appendChild(title);
+    app.appendChild(devContainer);
+    devContainer.appendChild(descripcionElem)
+    devContainer.appendChild(buttonDescripcion)
   }
 }

@@ -213,7 +213,7 @@ Sin embargo, cuando usamos el operador ===, tanto el valor como el tipo deben se
     descripcion: `
     Lo que hace JS aquí es registrar el objeto debido a que acabamos de crear un objeto vacío en el objeto global. Cuando escribimos erróneamente greeting como greetign, el intérprete de JS ve esto como global.greetign = {} (o window.greetign = {} en un navegador).
 
-    Para evitar esto, podemos usar el ["uso estricto"](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Modo_estricto). Esto asegura que se haya declarado una variable antes de establecerla igual a cualquier cosa.
+    Para evitar esto, podemos usar el ["uso estricto"]. Esto asegura que se haya declarado una variable antes de establecerla igual a cualquier cosa.
     `,
   },
   {

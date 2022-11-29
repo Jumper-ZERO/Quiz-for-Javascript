@@ -15,6 +15,10 @@ h1 {
   @apply text-white text-5xl p-5 font-hand text-center;
 }
 
+h2 {
+  @apply text-2xl text-white mb-4 text-center font-hand
+}
+
 #question {
   @apply text-2xl text-white mb-4 text-center font-hand;
 }
@@ -32,11 +36,19 @@ h1 {
 }
 
 pre {
-  @apply w-full mx-auto text-xs
+  @apply w-full mx-auto text-xs overflow-x-scroll m-8
 }
 
 .descripcion {
-  @apply text-white text-justify font-hand
+  @apply text-white text-justify font-hand mb-5
+}
+
+.buttonDescripcion {
+  @apply bg-slate-700 text-white font-hand text-lg hover:cursor-pointer hover:bg-slate-800 p-2 rounded-lg
+}
+
+.containerDescripcion {
+  @apply flex flex-col items-center
 }
 
 .score {
