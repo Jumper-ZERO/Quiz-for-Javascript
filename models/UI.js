@@ -1,4 +1,5 @@
 import { Question } from "./Question";
+import hljs from 'highlight.js';
 
 export class UI {
   constructor() {}
