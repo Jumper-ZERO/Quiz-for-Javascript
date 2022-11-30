@@ -60,7 +60,7 @@ export class UI {
   showCode(coding) {
     const code = document.querySelector('#code');
     code.innerHTML = coding;
-    hljs.highlightElement(document.querySelector('pre'))
+    hljs.highlightElement(document.querySelector('pre'));
   }
 
   showDescripcion(descripcion, callback)  {
